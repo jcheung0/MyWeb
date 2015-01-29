@@ -1,0 +1,13 @@
+{
+  "name": "myweb-sails",
+  "version": "0.0.0",
+  "authors": [
+    "Johnson Cheung <jcheung0@gmail.com>"
+  ],
+  "description": "my personal webapp",
+  "moduleType": [
+    "node"
+  ],
+  "license": "MIT",
+  "private": true
+}
