@@ -1,55 +1,87 @@
- #Skill-HTML {
- width: 100%;
- animation: Animate-HTML 4s;
- -webkit-animation: Animate-HTML 4s;
- -moz-animation: Animate-HTML 4s;
- -o-animation: Animate-HTML 4s;
- height: 45px;
- position: absolute;
- background-color: #F9690E;
- -webkit-border-radius: 3px;
- -moz-border-radius: 3px;
- border-radius: 3px;
- }
- @keyframes Animate-HTML {
- a from {width: 10px;}
- to {width: 100%}
- }
- @-webkit-keyframes Animate-HTML {
- from {width: 10px;}
- to {width: 100%}
- }
- @-moz-keyframes Animate-HTML {
- from {width: 10px;}
- to {width: 100%}
- }
- @-o-keyframes Animate-HTML {
- from {width: 10px;}
- to {width: 100%}
- }
+body{
+	font-size:1.5em;
+	font-family:courier new;
+}
 
- /* Animation Times - Time to fade in */
- .fadeIn-3s {
- -webkit-animation-duration:3s;
- -moz-animation-duration:3s;
- -o-animation-duration:3s;
- animation-duration:3s;
- }
- /* Animation Delay - Time to be delayed  */
- .fadeIn-Delay-3s {
- -webkit-animation-delay:3s;
- -moz-animation-delay:3s;
- -o-animation-delay:3s;
- animation-delay:3s;
- }
+#body{
+	width:75%;
+	margin-right:auto;
+	margin-left:auto;
+	border-radius:6px;
+	border:1px solid #ccc;
+}
 
- @media only screen and (max-width: 40em) {
- .responsive-percent {
- margin-right: -45px !important;
- }
- }
- @media only screen and (min-width: 40.063em) and (max-width: 64em) {
- .responsive-percent {
- margin-right: -45px !important;
- }
- }
+#navigation_bar{
+	text-align:center;
+}
+
+#header{
+	height:120px;
+	background-color:rgb(144, 196, 242);
+	text-align:center;
+}
+
+#headerTitle{
+	display:inline-block;
+}
+#skillbar{
+	width:32%;
+	left:100%;
+	display:inline-block;
+	position:relative;
+	border-radius:10px;
+	border:1px solid #00BFFF;
+}
+
+#skillheader{
+	text-align:center;
+	background-color:#00BFFF;
+	border-radius:4px;
+	color:#fff;
+}
+#skills{
+	margin:5px 5px 5px 5px;
+}
+
+#WorkXP{
+	display:inline-block;
+	position:absolute;
+
+}
+
+.progress-bar{
+	background-color:#00BFFF;
+}
+.TemplateBody{
+	margin-top:40px;
+	padding-bottom:60px;
+	padding-left:10px;
+	padding-right:10px;
+}
+
+.rating-on { 
+      height:30px;
+      width: 30px;
+      background-size: contain;
+      background-image: url("/images/rating_on.png");
+    }
+.rating-off {
+      height: 30px;
+      width: 30px;
+      background-size: contain;
+      background-image: url("/images/rating_off.png");
+    }
+
+#experience{
+	padding-bottom:20px;
+	width:50%;
+}
+
+#github{
+	display:inline-block;
+	height:64px;
+	width:64px;
+	float:right;
+	margin-top:10px;
+	margin-right:10px;
+}

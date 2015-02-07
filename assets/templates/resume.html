@@ -1,0 +1,66 @@
+<div class="TemplateBody" > 
+	
+	<script type="text/ng-template" id="myModalContent.html">
+        <div class="modal-header">
+            <h3 class="modal-title">Im a modal!</h3>
+        </div>
+        <div class="modal-body">
+            <ul>
+                <li ng-repeat="item in items">
+                    <a ng-click="selected.item = item">{{ item }}</a>
+                </li>
+            </ul>
+            Selected: <b>{{ selected.item }}</b>
+        </div>
+        
+    </script>
+
+    <div id="downloadResume"> 
+
+
+	</div>
+
+	<div id="WorkXP"> 
+		<div> Work Experience </div>
+		<div id="experience"> 
+			<div><span>Company: Fonality:</span> <div>Date: March 2014 - Present</div> </div>
+			<div>Position: Software Engineer </div>
+			<div>Summary: Developed software ranging from e-commerce platform for sales personel to telecommunication platform
+			</div>
+			<button class="btn" ng-click="open()">Details</button> 
+			
+		</div>
+
+		<div id="experience"> 
+			<div><span>Company: Deluxe Mediavu:</span> <div>Date: July 2011 - March 2014</div> </div>
+			<div>Position: Software Engineer </div>
+			<div>Summary: Work many hats and developed applications on several platforms ranging from android, roku </div>
+			<button class="btn" ng-click="open()">Details</button> 
+			
+		</div>
+
+		<div id="experience"> 
+			<div><span>Company:Geodelic </span> <div>Date: September 2009 - July 2011</div> </div>
+			<div>Position: Quality Assurance </div>
+			<div>Summary: Organized and worked with product management and engineering to ensure a bug free product as well as research automated testing on both android and Web </div>
+			<button class="btn" ng-click="open()">Details</button> 
+			
+		</div>
+
+
+	</div>
+
+	<div style="width:75%"> 
+		<div id="skillbar" > 
+				<div id="skillheader">Skills</div>
+					<div id="skills"> 
+						<div ng-repeat="skill in skills"> 	
+							<p>{{skill.name}}</p>
+							<rating ng-model="skill.value" max="5" readonly="true" state-on="'rating-on'" state-off="'rating-off'"></rating>
+
+						</div>
+					</div>
+		</div>
+	</div>
+
+</div>
