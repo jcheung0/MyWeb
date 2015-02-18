@@ -1,5 +1,4 @@
 var MyWebController = function($scope,$modal){
-	$scope.test = "hello world";
 	$scope.tabs = ["Projects","About","Resume"];
 
 	$scope.skills = [
@@ -15,10 +14,12 @@ var MyWebController = function($scope,$modal){
 	];
 
 	$scope.tabs = [
-	{title:'About',value:'80', template:'templates/About.html'},
-	{title:'Resume',value:'60', template:'templates/Resume.html'},
-	{title:'Projects',value:'70', template:'templates/Projects.html'},
+	{title:'About',template:'templates/About.html'},
+	{title:'Resume',template:'templates/Resume.html'},
+	{title:'Projects',template:'templates/Projects.html'},
 	//{title:'CheatSheet',template:'templates/CheatSheet.html'}
+	{title:'Contact',template:'templates/Projects.html'},
+	
 	];
 
 
@@ -27,14 +28,19 @@ var MyWebController = function($scope,$modal){
 
     var modalInstance = $modal.open({
       templateUrl: 'myModalContent.html',
-      //controller: 'ModalInstanceCtrl',
-      size: size,
+      controller: 'ModalController',
+      size: 'L',
       resolve: {
-        items: function () {
-          return $scope.items;
+        type: function(){
+        	return type;
         }
       }
     });
+
+    modalInstance.result.then(function(result){
+
+    });
+
 	}
 }
 

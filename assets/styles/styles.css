@@ -46,6 +46,9 @@ body{
 #WorkXP{
 	display:inline-block;
 	position:absolute;
+	width: 50%;
+	border: 1px solid #888;
+	border-radius: 3px;
 
 }
 
@@ -57,6 +60,9 @@ body{
 	padding-bottom:60px;
 	padding-left:10px;
 	padding-right:10px;
+}
+#company{
+	font-weight:bold;
 }
 
 .rating-on { 
@@ -74,14 +80,22 @@ body{
 
 #experience{
 	padding-bottom:20px;
-	width:50%;
+	width:100%;
+	padding-left:10px;
+	padding-right:10px;
+	padding-top:10px;
 }
 
 #github{
 	display:inline-block;
-	height:64px;
-	width:64px;
-	float:right;
+	height:32px;
+	width:32px;
 	margin-top:10px;
-	margin-right:10px;
+	margin-right:5px;
+}
+
+#xpheader{
+	padding-left: 5px;
+	background-color: #00BFFF;
+	color: #FFF;
 }

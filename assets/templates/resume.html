@@ -2,48 +2,81 @@
 	
 	<script type="text/ng-template" id="myModalContent.html">
         <div class="modal-header">
-            <h3 class="modal-title">Im a modal!</h3>
+            <h3 class="modal-title">{{type}}</h3>
         </div>
-        <div class="modal-body">
-            <ul>
-                <li ng-repeat="item in items">
-                    <a ng-click="selected.item = item">{{ item }}</a>
-                </li>
-            </ul>
-            Selected: <b>{{ selected.item }}</b>
+
+        <div class="modal-body fonality" ng-if="type =='Fonality'">
+        	<ul> 
+        		<li>Worked on web chat platform using angular js,html5 and LESS </li>
+        		<li>Full stack development on ecommerce platform using perl, java, jquery , css, javascript, html</li>
+        		<li>Rewrote android voip application (builidng a light version of the current application) </li>
+        	</ul> 
+        </div>
+
+        <div class="model-body" ng-if="type=='Mediavu'"> 
+        	<ul> 
+        		<li>Worked on Java Swing Application</li>
+        		<li>Worked on JEE Application Server</li>
+        		<li>Used JSF to build out NBC ad platform</li>
+        		<li>Built Android Application to Stream Content VIA HLS</li>
+        		<li>Created Restful APIs with Jboss RestEasy</li>
+        		<li>Upgrade webproject from JEE5 specifications to JEE 6</li>
+        		<li>Setup in house hosted JIRA and developed workflow using platform</li>
+        		<li>Created Webservices for Native Client to consume</li>
+        		<li>Moved developers over from Serena(SCM) to perforce</li>
+        		<li>Handled Build process and release management</li>
+        		<li>Wrote python scripts for perforce triggers and Daemon for onsite CacheBox</li>
+        		
+        	</ul> 
         </div>
         
+
+        <div class="model-body" ng-if="type=='Geodelic'"> 
+        	<ul> 
+        		<li>Manual Testing of Android Applications</li>
+        		<li>Managed and Raised QA servers environments for testing</li>
+        		<li>Used Selenium and Robotnium for UI testing(Scripts were written in python)</li>
+        		<li>IT Support around the office</li>
+        	</ul> 
+        </div>
+        
+
     </script>
 
-    <div id="downloadResume"> 
-
+    <div style="margin-bottom:10px"id="downloadResume"> 
+    	<a href="/images/Resume.pdf" target="_blank"> 
+    		<img style="width:12px;height:12px;display:inline-block"src="/images/filedownload.png"></img><div style="display:inline-block"> Download PDF Version </div>
+    	</a>
 
 	</div>
 
 	<div id="WorkXP"> 
-		<div> Work Experience </div>
+		<div id="xpheader"> Work Experience </div>
 		<div id="experience"> 
-			<div><span>Company: Fonality:</span> <div>Date: March 2014 - Present</div> </div>
+			<div><span id="company">Company: Fonality</span> <div style="float:right">Date: March 2014 - Present</div> </div>
 			<div>Position: Software Engineer </div>
-			<div>Summary: Developed software ranging from e-commerce platform for sales personel to telecommunication platform
-			</div>
-			<button class="btn" ng-click="open()">Details</button> 
+			<div>Summary: Developed software ranging from e-commerce web platform </div>
+			<div>Notes: Worked with Perl, Java, Spring, Hibernate, AngularJS, HTML5, CSS3, Javascript and Android</div>
+			
+			<button class="btn" ng-click="open('Fonality')">Details</button> 
 			
 		</div>
 
 		<div id="experience"> 
-			<div><span>Company: Deluxe Mediavu:</span> <div>Date: July 2011 - March 2014</div> </div>
+			<div><span id="company">Company: Deluxe Mediavu</span> <div style="float:right">Date: July 2011 - March 2014</div> </div>
 			<div>Position: Software Engineer </div>
-			<div>Summary: Work many hats and developed applications on several platforms ranging from android, roku </div>
-			<button class="btn" ng-click="open()">Details</button> 
+			<div>Summary: Handled Devops, System administration and Application Development in a Windows based environment</div>
+			<div> Notes: Technology used was Java, JEE, Spring Security, Perforce, Jenkins, Java Swing, Android </div>
+			<button class="btn" ng-click="open('Mediavu')">Details</button> 
 			
 		</div>
 
 		<div id="experience"> 
-			<div><span>Company:Geodelic </span> <div>Date: September 2009 - July 2011</div> </div>
+			<div><span id="company">Company:Geodelic </span> <div style="float:right;">Date: September 2009 - July 2011</div> </div>
 			<div>Position: Quality Assurance </div>
-			<div>Summary: Organized and worked with product management and engineering to ensure a bug free product as well as research automated testing on both android and Web </div>
-			<button class="btn" ng-click="open()">Details</button> 
+			<div>Summary: Organized and worked with product management and engineering to ensure a bug free product as well as research automated testing for both android and Web </div>
+			<div>notes: Worked with Python, Selenium,Android </div>
+			<button class="btn" ng-click="open('Geodelic')">Details</button> 
 			
 		</div>
 
