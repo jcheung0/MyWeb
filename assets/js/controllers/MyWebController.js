@@ -18,7 +18,7 @@ var MyWebController = function($scope,$modal){
 	{title:'Resume',template:'templates/Resume.html'},
 	{title:'Projects',template:'templates/Projects.html'},
 	//{title:'CheatSheet',template:'templates/CheatSheet.html'}
-	{title:'Contact',template:'templates/Projects.html'},
+	//{title:'Contact',template:'templates/Projects.html'},
 	
 	];
 

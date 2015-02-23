@@ -11,4 +11,6 @@ var ModalController = function($scope,$modalInstance,type){
 		case 'Geodelic':
 			break;
 	}
+
+	
 }
