@@ -14,9 +14,9 @@ var MyWebController = function($scope,$modal){
 	];
 
 	$scope.tabs = [
-	{title:'About',template:'templates/About.html'},
-	{title:'Resume',template:'templates/Resume.html'},
-	{title:'Projects',template:'templates/Projects.html'},
+	{title:'About',template:'templates/about.html'},
+	{title:'Resume',template:'templates/resume.html'},
+	{title:'Projects',template:'templates/projects.html'},
 	//{title:'CheatSheet',template:'templates/CheatSheet.html'}
 	//{title:'Contact',template:'templates/Projects.html'},
 	
