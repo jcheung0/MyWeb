@@ -37,6 +37,10 @@ module.exports.routes = {
     action: 'test'
     //view: 'homepage'
   },
+  '/digital_analytics':{
+    controller:'UserController',
+    action:'digital_analytics'
+  },
   'GET /hello':'UserController.test'
 
   /***************************************************************************
