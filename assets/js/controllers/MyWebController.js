@@ -22,7 +22,11 @@ var MyWebController = function($scope,$modal){
 	
 	];
 
-
+	$scope.send_page_view = function(){
+			console.log("sending event");
+  				ga('send', 'pageview',{'page':"/images/Resume.pdf",'title':"Resume page view"});
+			
+	}
 
 	$scope.open = function (type) {
 
